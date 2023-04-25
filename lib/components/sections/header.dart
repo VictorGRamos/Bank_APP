@@ -1,5 +1,6 @@
 import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:alubank/themes/my_theme.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -22,19 +23,18 @@ class Header extends StatelessWidget {
           children: <Widget>[
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const <Widget>[
+              children: <Widget>[
                 Text.rich(
                   TextSpan(
                     text: "\$",
                     children: <TextSpan>[
                       TextSpan(
                           text: "1000.00",
-                          style: TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.bold)),
+                          style: Theme.of(context).textTheme.bodyLarge),
                     ],
                   ),
                 ),
-                Text("Balanço disponível"),
+                const Text("Balanço disponível"),
               ],
             ),
             const Icon(
