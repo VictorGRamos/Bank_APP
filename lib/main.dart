@@ -13,9 +13,9 @@ class Alubank extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Alubank",
-      theme: MyTheme,
-      darkTheme: MyTheme,
-      home: Home(),
+      theme: myTheme,
+      darkTheme: myTheme,
+      home: const Home(),
     );
   }
 }

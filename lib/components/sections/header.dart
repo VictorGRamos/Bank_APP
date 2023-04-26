@@ -1,6 +1,5 @@
 import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:alubank/themes/my_theme.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});

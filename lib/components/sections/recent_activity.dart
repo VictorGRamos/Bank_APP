@@ -3,8 +3,6 @@ import 'package:alubank/components/color_dot.dart';
 import 'package:alubank/components/content_division.dart';
 import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class RecentActivity extends StatelessWidget {
   const RecentActivity({super.key});
@@ -19,7 +17,7 @@ class RecentActivity extends StatelessWidget {
 }
 
 class _RecentActivityContent extends StatelessWidget {
-  const _RecentActivityContent({super.key});
+  const _RecentActivityContent();
 
   @override
   Widget build(BuildContext context) {

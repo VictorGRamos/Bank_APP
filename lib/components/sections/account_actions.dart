@@ -1,7 +1,5 @@
 import 'package:alubank/components/box_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class AccountActions extends StatelessWidget {
   const AccountActions({super.key});
@@ -9,7 +7,7 @@ class AccountActions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -62,11 +60,11 @@ class _AccountActionsContent extends StatelessWidget {
   final Icon icon;
   final String text;
   const _AccountActionsContent(
-      {super.key, required this.icon, required this.text});
+      {required this.icon, required this.text});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 72,
       child: Column(
         children: [
